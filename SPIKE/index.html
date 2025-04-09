@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Imagine All The Relevance:<br>Scenario-Profiled Indexing with Knowledge Expansion for Dense Retrieval</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Imagine All The Relevance:<br>Scenario-Profiled Indexing with Knowledge Expansion for Dense Retrieval</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://augustinlib.github.io/" target="_blank">Sangam Lee</a><sup>1</sup>,</span>
+                <span class="author-block">
+                  <a href="https://github.com/ryang1119" target="_blank">Ryang Heo</a><sup>1</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://seongku-kang.github.io/" target="_blank">SeongKu Kang</a><sup>2</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://donalee.github.io/" target="_blank">Dongha Lee</a><sup>1</sup></span>
+
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>Yonsei University  <sup>2</sup>Korea University</span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                    <!-- ArXiv abstract Link -->
+                    <span class="link-block">
+                      <a href="https://arxiv.org/abs/2503.23033" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                      </span>
+                      <span>Paper</span>
+                    </a>
+                    </span>
+
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/augustinLib/SPIKE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://huggingface.co/yonsei-dli/SPIKE-Scenario-Generator" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <span style="font-weight: bold; font-size: 1.2em;">🤗</span>
+                  </span>
+                  <span>Hugging Face</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Intro-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/images/spike_intro.png" alt="SPIKE" width="100%" height="auto">
+      <h2 class="subtitle has-text-centered">
+        Existing retrieval methods fail to capture implicit relevance which requires intensive reasoning, as they encode document into single vector without any reasoning. In contrast, <strong>SPIKE</strong> introduces scenario, <strong class="has-text-primary">explicitly modeling how a document establishes relevance to potential information needs</strong>.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End Intro -->
+
+<!-- SPIKE Summary Section -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Why SPIKE?</h2>
+    <div class="columns is-multiline">
+      <div class="column is-half has-text-centered">
+        <span class="icon is-large"><i class="fas fa-brain fa-2x"></i></span>
+        <h3 class="title is-5">Reasoning-Aware Retrieval</h3>
+        <p>Unlike traditional dense retrievers, SPIKE <strong class="has-text-info">explicitly models the implicit relevance</strong> between document and potential information needs, not just surface similarity.</p>
+      </div>
+      <div class="column is-half has-text-centered">
+        <span class="icon is-large"><i class="fas fa-code fa-2x"></i></span>
+        <h3 class="title is-5">Cross-Format Retrieval</h3>
+        <p>SPIKE effectively <strong class="has-text-info">connects query-document pairs across different formats</strong> such as code snippets, enabling semantic alignment despite format differences.</p>
+      </div>
+      <div class="column is-half has-text-centered">
+        <span class="icon is-large"><i class="fas fa-users fa-2x"></i></span>
+        <h3 class="title is-5">Enhanced User Experience</h3>
+        <p>By providing scenario explanations, SPIKE makes results more <strong class="has-text-info">comprehensible and useful</strong> for real-world users and LLMs.</p>
+      </div>
+      <div class="column is-half has-text-centered">
+        <span class="icon is-large"><i class="fas fa-bolt fa-2x"></i></span>
+        <h3 class="title is-5">Efficient</h3>
+        <p>Using a <strong class="has-text-info">efficient 3B scenario generator</strong>, which is applied <strong class="has-text-info">offline</strong> to build a scenario-profiled index</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Framework Diagram -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">SPIKE Framework</h2>
+    <figure class="image">
+      <img src="static/images/spike_method.png" alt="SPIKE Framework Overview">
+    </figure>
+    <p class="has-text-centered mt-4">Overview of SPIKE framework. <strong>(1)</strong> SPIKE define Scenario and generate it with
+      high-performing large LLM. <strong>(2)</strong> Then, it construct scenario-augmented training set, and use
+      this to optimize the efficient student LLM. During inference, <strong>(3)</strong> SPIKE considers scenariolevel relevance alongside document-level relevance to retrieve the documents.</p>
+  </div>
+</section>
+
+
+<!-- Key Results -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">🚀 Performance Highlights</h2>
+
+    <div class="content has-text-centered">
+      <p class="is-size-5">
+        SPIKE significantly <strong>enhances retrieval performance</strong> across diverse models and domains —
+        all with a <strong>3B scenario generator</strong> which is applied <strong>offline</strong>.
+      </p>
+
+      <div class="columns is-multiline is-centered mt-5">
+
+        <!-- Performance Gain -->
+        <div class="column is-one-third has-text-centered">
+          <span class="icon is-large"><i class="fas fa-chart-line fa-2x"></i></span>
+          <p class="mt-2 title is-5">Retrieval Accuracy Gains</p>
+          <p class="mb-2"><strong>+20.7%</strong> (E5-Mistral) <br> <strong>+18.6%</strong> (SFR)</p>
+          <p><strong class="has-text-danger">Consistent improvements</strong> on reasoning-intensive benchmarks like BRIGHT.</p>
+        </div>
+
+        <!-- Human Evaluation -->
+        <div class="column is-one-third has-text-centered">
+          <span class="icon is-large"><i class="fas fa-users fa-2x"></i></span>
+          <p class="mt-2 title is-5">Human-Preferred Results</p>
+          <p class="mb-2">SPIKE was consistently preferred across various criteria such as <strong>usefulness</strong>.</p>
+          <p>SPIKE <strong class="has-text-danger">enhances retrieval experience</strong> for real-world users.</p>
+        </div>
+
+        <!-- RAG Boost -->
+        <div class="column is-one-third has-text-centered">
+          <span class="icon is-large"><i class="fas fa-brain fa-2x"></i></span>
+          <p class="mt-2 title is-5">Boosts RAG Performance </p>
+          <p class="mb-2"><strong>Enhances answer generation</strong> for LLMs such as Claude-3.5 and LLaMA3-70B.</p>
+          <p>SPIKE <strong class="has-text-danger">provides valuable additional context</strong> for LLMs in RAG.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
