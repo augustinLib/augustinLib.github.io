@@ -572,8 +572,24 @@
                           </p>
                         </td>
                         <td style="padding: 0px; width: 30%; vertical-align: middle; text-align: right;">
-                          <div style="width: 180px; height: 120px; margin-left: auto;">
-                            <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=tt&d=lW0HPyXUX9Cz0xUQIXMi8HQAKsdcjUS9i_hcq4ixAJQ&co=0067af'></script>
+                          <div style="width: 180px; height: 120px; margin-left: auto;" id="clustrmaps-container">
+                            <script type='text/javascript'>
+                              window.addEventListener('load', function() {
+                                try {
+                                  var script = document.createElement('script');
+                                  script.type = 'text/javascript';
+                                  script.id = 'clustrmaps';
+                                  script.src = '//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=tt&d=lW0HPyXUX9Cz0xUQIXMi8HQAKsdcjUS9i_hcq4ixAJQ&co=0067af';
+                                  script.async = true;
+                                  script.onerror = function() {
+                                    console.log('ClusterMaps widget failed to load');
+                                  };
+                                  document.head.appendChild(script);
+                                } catch(e) {
+                                  console.log('Error loading ClusterMaps: ', e);
+                                }
+                              });
+                            </script>
                           </div>
                         </td>
                       </tr>
