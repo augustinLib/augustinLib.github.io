@@ -1,0 +1,10 @@
+query_id,query,doc_id,title,snippet,path,relevant
+Q1,"When was Dubai founded?",dubai,"Dubai","Dubai is the most populous city in the United Arab Emirates (UAE). It has been ruled by the Al Maktoum family since 1833.","Government > Government by Cities > Government of Dubai",true
+Q1,"When was Dubai founded?",uae,"United Arab Emirates","The UAE is a country in Western Asia, known for its modern architecture and luxury shopping.","Geography > Countries > Middle East Countries",false
+Q1,"When was Dubai founded?",burj_khalifa,"Burj Khalifa","Burj Khalifa is a skyscraper in Dubai, standing at 828 meters as the world's tallest building.","History > History of Buildings > Buildings in Dubai",false
+Q2,"What are the main economic sectors of Dubai?",dubai,"Dubai","Its economy relies on revenues from trade, tourism, aviation, real estate, and financial services.","Economy > Economy by Cities > Economy of Dubai",true
+Q2,"What are the main economic sectors of Dubai?",dubai_creek,"Dubai Creek","Dubai Creek is a saltwater creek that divides the city into two main sections: Deira and Bur Dubai.","Economy > Trade History > Maritime Routes",false
+Q2,"What are the main economic sectors of Dubai?",palm_jumeirah,"Palm Jumeirah","Palm Jumeirah is an artificial archipelago created using land reclamation by Nakheel.","Economy > Real Estate > Mega Projects",false
+Q3,"Why is Dubai a tourism hub?",burj_khalifa,"Burj Khalifa","Burj Khalifa draws millions of visitors annually with observation decks, dining, and events.","Tourism > Tourism by Cities > Tourism in Dubai",true
+Q3,"Why is Dubai a tourism hub?",dubai,"Dubai","Dubai is a global city and business hub of the Middle East, governed by the Al Maktoum family.","Economy > Economy by Cities > Economy of Dubai",false
+Q3,"Why is Dubai a tourism hub?",jebel_ali,"Jebel Ali Port","Jebel Ali is the largest port in the Middle East, handling over 15 million containers annually.","Tourism > Transportation > Cruise Ports",false
