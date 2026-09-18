@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Self-Index enables a search index to self-evolve by autonomously diagnosing, revising, and validating its index keys across diverse retrieval demands.">
+  <meta name="keywords" content="Self-Index, Self-Evolving Search Index, information retrieval, index optimization, search agents, agent memory">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Self-Index: Self-Evolving Search Index">
+  <meta property="og:description" content="An index that learns to expose document knowledge through self-exploration, self-diagnosis, self-revision, and self-validation.">
+  <meta property="og:url" content="https://augustinlib.github.io/Self-Index/">
+  <meta property="og:image" content="https://augustinlib.github.io/Self-Index/static/images/self_index_method.png">
+  <meta property="og:image:width" content="2744">
+  <meta property="og:image:height" content="1196">
+  <meta property="og:image:alt" content="The Self-Index framework: explore retrieval demands, diagnose index shortfalls, revise keys, and validate updates.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Self-Index: Self-Evolving Search Index">
+  <meta name="twitter:description" content="A framework for autonomous search-index evolution across diverse retrieval environments.">
+  <meta name="twitter:image" content="https://augustinlib.github.io/Self-Index/static/images/self_index_method.png">
+  <title>Self-Index: Self-Evolving Search Index</title>
+  <link rel="canonical" href="https://augustinlib.github.io/Self-Index/">
+  <link rel="icon" type="image/svg+xml" href="static/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+</head>
+<body>
+  <main id="main-content">
+    <section class="hero" aria-labelledby="paper-title">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 id="paper-title" class="title is-1 publication-title">Self-Evolving Search Index</h1>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block"><a href="https://augustinlib.github.io/" target="_blank" rel="noopener noreferrer">Sangam Lee</a><sup>1*</sup>,</span>
+                <span class="author-block">Wonjae Lee<sup>1,2*</sup>,</span>
+                <span class="author-block">Sunghwan Kim<sup>1</sup>,</span>
+                <span class="author-block">Deogyong Kim<sup>1</sup>,</span>
+                <span class="author-block">Jaehoon Kim<sup>1</sup>,</span>
+                <br class="author-break">
+                <span class="author-block"><a href="https://dayenam.com/" target="_blank" rel="noopener noreferrer">Daye Nam</a><sup>3</sup>,</span>
+                <span class="author-block"><a href="https://seongku-kang.github.io/" target="_blank" rel="noopener noreferrer">SeongKu Kang</a><sup>4</sup>,</span>
+                <span class="author-block"><a href="https://donalee.github.io/" target="_blank" rel="noopener noreferrer">Dongha Lee</a><sup>1†</sup></span>
+              </div>
+              <div class="is-size-5 publication-authors affiliations">
+                <span class="author-block"><sup>1</sup>Yonsei University</span>
+                <span class="author-block"><sup>2</sup>Samsung Research</span>
+                <span class="author-block"><sup>3</sup>University of California, Irvine</span>
+                <span class="author-block"><sup>4</sup>Korea University</span>
+              </div>
+              <p class="contribution-note"><sup>*</sup>Equal contribution. <sup>†</sup>Corresponding author.</p>
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2609.19656" target="_blank" rel="noopener noreferrer" class="button is-normal is-rounded is-dark">
+                    <span class="icon" aria-hidden="true"><i class="fas fa-file-pdf"></i></span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://github.com/augustinLib/Self-Index" target="_blank" rel="noopener noreferrer" class="button is-normal is-rounded is-dark">
+                    <span class="icon" aria-hidden="true"><i class="fab fa-github"></i></span>
+                    <span>Code</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero teaser" aria-label="Self-Index at a glance">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <figure>
+            <a class="figure-link" href="static/images/self_index_example.png" target="_blank" rel="noopener noreferrer" aria-label="Open the index evolution example at full size">
+              <img src="static/images/self_index_example.png" width="1896" height="280" fetchpriority="high" alt="BRIGHT Biology example: for a query about independent ring-finger movement, a relevant document rises from rank 63 at iteration 0 to rank 40 at iteration 6 and rank 2 at iteration 10 as its index keys clarify the functional relevance of tendon connections.">
+            </a>
+            <figcaption class="figure-hint">A BRIGHT Biology example. Select the figure to view it at full size.</figcaption>
+          </figure>
+          <h2 class="subtitle has-text-centered">
+            Effective index representations vary across retrieval environments. <strong>Self-Index</strong> enables an index to <strong class="has-text-primary">self-evolve without human intervention</strong>: it diagnoses retrieval shortfalls, selectively revises index keys, and validates updates. By exploring additional retrieval demands, it progressively exposes document knowledge that the original index leaves implicit.
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="why-title">
+      <div class="container is-max-desktop">
+        <h2 id="why-title" class="title is-3 has-text-centered">Why Self-Index?</h2>
+        <!-- Background motivates index evolution; the two cards describe its recurring costs. -->
+        <div class="content has-text-centered">
+          <p>Retrieval quality depends on how well index keys expose document knowledge. Because effective representations vary across corpora and retrievers, <strong>the index needs to evolve to fit its retrieval environment</strong>. Existing approaches make this evolution costly in two ways.</p>
+        </div>
+        <div class="columns feature-grid">
+          <div class="column is-half has-text-centered">
+            <span class="icon is-large" aria-hidden="true"><i class="fas fa-user-cog fa-2x"></i></span>
+            <h3 class="title is-5">Human Effort</h3>
+            <p>Humans must <strong class="has-text-info">diagnose retrieval failures and refine the optimization strategy</strong>, through manual changes or additional relevance annotations and retraining.</p>
+          </div>
+          <div class="column is-half has-text-centered">
+            <span class="icon is-large" aria-hidden="true"><i class="fas fa-database fa-2x"></i></span>
+            <h3 class="title is-5">Computational Cost</h3>
+            <p>Applying each revised strategy requires <strong class="has-text-info">reprocessing all index keys</strong>. This cost recurs as new retrieval failures call for further refinement.</p>
+          </div>
+        </div>
+        <p class="has-text-centered mt-4"><strong>Self-Index</strong> addresses these bottlenecks by <strong class="has-text-primary">automating index evolution and selectively updating the affected keys</strong>.</p>
+      </div>
+    </section>
+
+    <section class="section hero is-light" aria-labelledby="framework-title">
+      <div class="container is-max-desktop">
+        <h2 id="framework-title" class="title is-3 has-text-centered">Self-Index Framework</h2>
+        <figure>
+          <a class="figure-link" href="static/images/self_index_method.png" target="_blank" rel="noopener noreferrer" aria-label="Open the Self-Index framework diagram at full size">
+            <img src="static/images/self_index_method.png" width="2744" height="1196" loading="lazy" alt="Self-Index loop: the Query Simulator samples documents, generates queries, and filters duplicates. The Optimizer retrieves index keys, diagnoses shortfalls using co-retrieval profiles, revises the affected key sets, and validates faithfulness, specificity, and separation before updating the index.">
+          </a>
+          <figcaption class="has-text-centered mt-4">
+            The <strong>Optimizer</strong> evolves index keys using observed or simulated queries. The <strong>Query Simulator</strong> explores new demands, and validated improvements accumulate as the loop repeats.
+          </figcaption>
+        </figure>
+        <div class="columns is-multiline feature-grid mt-5">
+          <div class="column is-half has-text-centered">
+            <span class="icon is-large" aria-hidden="true"><i class="fas fa-search fa-2x"></i></span>
+            <h3 class="title is-5">Self-Diagnosis</h3>
+            <p>Uses retrieval outcomes and co-retrieval patterns to <strong class="has-text-info">identify index shortfalls</strong>, without requiring query-document relevance annotations.</p>
+          </div>
+          <div class="column is-half has-text-centered">
+            <span class="icon is-large" aria-hidden="true"><i class="fas fa-sync-alt fa-2x"></i></span>
+            <h3 class="title is-5">Self-Revision</h3>
+            <p>Autonomously decides how to <strong class="has-text-info">refine the affected key sets</strong>, while keeping the underlying documents unchanged.</p>
+          </div>
+          <div class="column is-half has-text-centered">
+            <span class="icon is-large" aria-hidden="true"><i class="fas fa-check-circle fa-2x"></i></span>
+            <h3 class="title is-5">Self-Validation</h3>
+            <p>Checks generated keys for <strong class="has-text-info">faithfulness, specificity, and separation</strong>, accepting only validated revisions into the index.</p>
+          </div>
+          <div class="column is-half has-text-centered">
+            <span class="icon is-large" aria-hidden="true"><i class="fas fa-binoculars fa-2x"></i></span>
+            <h3 class="title is-5">Self-Exploration</h3>
+            <p>A Query Simulator explores <strong class="has-text-info">retrieval demands not yet covered</strong>, allowing the index to evolve beyond the queries already available.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="results-title">
+      <div class="container is-max-desktop">
+        <h2 id="results-title" class="title is-3 has-text-centered">🚀 Performance Highlights</h2>
+        <div class="content has-text-centered">
+          <p class="is-size-5">Self-Index improves retrieval across <strong>natural language, code, math, and tables</strong>, with benefits extending to search agents and agent memory.</p>
+          <div class="columns is-centered mt-5 results-grid">
+            <!-- Source: table/rq1-bright.tex, Final Avg. and relative delta. -->
+            <div class="column is-one-third">
+              <span class="icon is-large" aria-hidden="true"><i class="fas fa-chart-line fa-2x"></i></span>
+              <h3 class="title is-5">Stronger Retrieval</h3>
+              <p class="result-value">+57.0% <span>(BGE)</span><br>+40.4% <span>(BM25)</span></p>
+              <p>Relative gains in average <strong>nDCG@10 on BRIGHT</strong> over the corresponding base index.</p>
+            </div>
+            <!-- Sources: table/rq2-bcp.tex and table/online-cost.tex, Kimi-K2.5 / BM25. -->
+            <div class="column is-one-third">
+              <span class="icon is-large" aria-hidden="true"><i class="fas fa-bolt fa-2x"></i></span>
+              <h3 class="title is-5">More Efficient Search Agents</h3>
+              <p class="result-value">+41.1% <span>accuracy</span><br>−24.0% <span>online cost</span></p>
+              <p>Relative changes on <strong>BrowseComp-Plus</strong> for Kimi-K2.5 with BM25, compared with the base index.</p>
+            </div>
+            <!-- Source: table/rq3-mem.tex, Query -> Slice overall improvement. -->
+            <div class="column is-one-third">
+              <span class="icon is-large" aria-hidden="true"><i class="fas fa-brain fa-2x"></i></span>
+              <h3 class="title is-5">Better Agent Memory</h3>
+              <p class="result-value">+13.9% <span>overall</span><br><span>0.415 → 0.472</span></p>
+              <p>Relative overall score gain on <strong>LongMemEval-V2</strong> for the Query → Slice baseline.</p>
+            </div>
+          </div>
+          <p class="results-note">Reported results from the paper. Online cost excludes offline index construction.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank" rel="noopener noreferrer">Academic Project Page Template</a>, adopted from the <a href="https://nerfies.github.io/" target="_blank" rel="noopener noreferrer">Nerfies</a> project page. This website is licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="license noopener noreferrer">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
